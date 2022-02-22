@@ -1,0 +1,50 @@
+portfolio website card flip code:
+
+const Cards = () => {
+    const odd_data = Data.filter(data => data.id % 2 !== 0)
+    const even_data = Data.filter(data => data.id % 2 === 0)
+
+    useEffect(() => {
+        Aos.init({ duration: 750})
+    }, [])
+
+    return (
+        <div className='card-container'>
+            <div className='odd-container'>
+                {odd_data.map((data) => {
+                    return(
+                        <div data-aos='zoom-in-down' data-aos-once='true'>
+                            <Card  className='odd-cards' key={data.id} data={data}/>
+                        </div>
+                    )
+                })}
+            </div>
+            <div className='even-container'>
+                {even_data.map((data) => {
+                    return(
+                        <div data-aos='zoom-in-down' data-aos-once='true'>
+                            <Card key={data.id} data={data}/>
+                        </div>
+                    )
+                })} 
+            </div>
+        </div>
+    )
+}
+
+export default Cards
+
+<Flippy flipOnHover={true} flipDirection="horizontal" ref={ref} style={{ margin:'10px 2.5px', padding:'0', borderRadius: '10px'}}>
+      <FrontSide style={{ borderRadius: '10px'}} animationDuration='1000'>
+
+        <h5 className="card-title">{data.title}</h5>
+        <p className="card-text">{data.content}</p>
+        <a href={data.link} className="card-link">Click Here For More</a>
+
+      </FrontSide>
+      <BackSide style={{  borderRadius: '10px'}} animationDuration='1000'>
+
+        PEANUTS
+
+      </BackSide>
+    </Flippy>
