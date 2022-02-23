@@ -2,11 +2,10 @@ import React, {useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import {FiMail} from 'react-icons/fi';
 import {FaLinkedin, FaInstagram, FaGithub} from 'react-icons/fa';
-import {MdArrowBack} from 'react-icons/md'
 import { Flipper, Flipped } from 'react-flip-toolkit'
 import TextareaAutosize from 'react-textarea-autosize';
 import Lottie from 'lottie-web';
-import { Link } from 'react-router-dom';
+import FloatingButton from '../components/FloatingButton';
 
 const Contact = () => {
 
@@ -23,6 +22,11 @@ const Contact = () => {
             animationData: require('../svg/white-checkmark.json')
         })
     }, [])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -64,9 +68,6 @@ const Contact = () => {
   return (
     <div className='form-container'>
         <div className='social-media-list'>
-            
-            
-
             <div className='social-tags'>
                 <a href='https://www.instagram.com/'>
                     <div className='social-icon'>
@@ -125,12 +126,7 @@ const Contact = () => {
                 </Flipper>
             </div>
         </form>
-
-        <Link to='/'>
-            <button className='floating-button'>
-                <MdArrowBack size={40} color={'white'}/>
-            </button>
-        </Link>
+        <FloatingButton/>
     </div>
   )
 }

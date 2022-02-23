@@ -15,7 +15,7 @@ import graduated from '../images/graduated.png';
 import idea from '../images/idea.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Carousell from '../components/Carousell';
+import ProjectTabs from '../components/ProjectTabs';
 
 
 
@@ -85,16 +85,16 @@ const Home = () => {
                 </div>
                 <div className='body-container'>
                     <div className='card-container'>
-                        <div className='card-styling' data-aos="fade-down">
+                        <div className='card-styling' data-aos="fade-down" id='about'>
                             <div className='card-text'>
                                 <h1 className="card-title"><i>About</i></h1>
-                                <p>Hello! This is my portfolio website, made with HTML, CSS and Javascript(React). I would really appreciate if you could leave me some feedback on your experience using the website, just click the contact me button to take you to a separate page where you can send me an email. If you want to download my CV, click the 'Download My CV!' button at the top. Hope you enjoy the website!</p>
+                                <p>Hello! This is my portfolio website, made with HTML, CSS and Javascript(React). I would really appreciate if you could leave me some feedback on your experience using the website, just click the 'Contact Me' button to take you to a separate page where you can send me an email. If you want to download my CV, click the 'Download My CV!' button right below the animation above. Hope you enjoy the website!</p>
                             </div>
                             <div className='card-png'>
                                 <img src={gears} alt='gears-shifting' width='200' height='200' style={{opacity: '0.8'}}/>
                             </div>
                         </div>
-                        <div className='card-styling' data-aos="fade-down">
+                        <div className='card-styling' data-aos="fade-down" id='experience'>
                             <div className='card-text'>
                                 <h1 className="card-title"><i>Experience</i></h1>
                                 <br/>
@@ -115,13 +115,13 @@ const Home = () => {
                                 <img src={working} alt='work-exp' width='200' height='200' style={{opacity: '0.8'}}/>
                             </div>
                         </div>
-                        <div className='card-styling' data-aos="fade-down">
+                        <div className='card-styling' data-aos="fade-down" id='skills'>
                             <div className='skills-card'>
                                 <h1 className="card-title"><i>Skills</i></h1>
                                 <BarChart/>
                             </div>
                         </div>
-                        <div className='card-styling' data-aos="fade-down">
+                        <div className='card-styling' data-aos="fade-down" id='education'>
                         <div className='card-text'>
                                 <h1 className="card-title"><i>Education</i></h1>
                                 <br/>
@@ -146,13 +146,16 @@ const Home = () => {
                                 <img src={graduated} alt='education' width='200' height='200' style={{opacity: '0.8'}}/>
                             </div>
                         </div>
-                        <div className='card-styling' data-aos="fade-down">
-                            <div className='skills-card'>
-                                <h1 className="card-title"><i>Projects</i></h1>
-                                <Carousell/>
+                        <div className='project-card-styling' data-aos="fade-down" id='projects'>
+                            <div className='project-card'>
+                                <h2 className="project-card-title"><i>Projects</i></h2>
+                                <ProjectTabs/>
+                                <div className='closing-tag'>
+                                    More to come......
+                                </div>
                             </div>
                         </div>
-                        <div className='card-styling' data-aos="fade-down">
+                        <div className='card-styling' data-aos="fade-down" id='aspirations'>
                             <div className='card-text'>
                                 <h1 className="card-title"><i>Aspirations</i></h1>
                                 <p>I love to learn and discover new things. Artificial Intelligence is a relatively new frontier with so much potential to make big changes in the world and so much room to explore. Hence, I am deeply interested in it and one day aspire to specialise in AI in Healthcare so that we may one day use AI to solve the medical mysteries that we never could.</p>
@@ -164,7 +167,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div> undefined <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
         </div>
         
         )

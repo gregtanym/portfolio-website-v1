@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../context';
 import {Navbar, Nav, Container, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
+import FloatingButton from './FloatingButton';
+import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
      
@@ -14,6 +16,12 @@ const NavBar = () => {
             <div className='navbar-body'>
                 <Link to='/' style={{ textDecoration: 'none',color:'white', padding:'10px'}}>Home</Link>
                 <Link to='/contact' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Contact</Link>
+                <HashLink to='/#about' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>About</HashLink>
+                <HashLink to='/#experience' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Experience</HashLink>
+                <HashLink to='/#skills' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Skills</HashLink>
+                <HashLink to='/#education' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Education</HashLink>
+                <HashLink to='/#projects' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Projects</HashLink>
+                <HashLink to='/#aspirations' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Aspirations</HashLink>
             </div>
         </div>
     )
