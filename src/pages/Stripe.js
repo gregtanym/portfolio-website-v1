@@ -16,10 +16,10 @@ const Stripe = () => {
         <h1>Stripe Landing Page</h1>
         <div className='project-description'>
             <p>
-                This was a project to inmitate Stripe's home page. On the left is my version, on the right is the actual version.
+                This was a project to inmitate Stripe's home page. My version is on the left, the actual version is on the right.
             </p>
             <div>
-                <b>Github Repository:</b> 
+                <b>Github Repository: </b><a href='https://github.com/gregtanym/stripe-react'>here</a> 
             </div>
             <div>
                 <b>Demo:</b> Unavailable 

@@ -27,7 +27,7 @@ const AvatarPage = () => {
                 There is also a button that directs the user to a separate page that allows him/her to see the works of other users and interact with their avatars.
             </p>
             <div>
-                <b>Github Repository:</b> 
+                <b>Github Repository: </b><a href='https://github.com/gregtanym/CS50/tree/main/CS50%20final%20project'>here</a>
             </div>
             <div>
                 <b>Demo:</b> Unavailable 

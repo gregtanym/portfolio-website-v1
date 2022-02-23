@@ -25,13 +25,13 @@ const Cocktail = () => {
                 The search function works on every keystroke and will filter out the cocktails as you type. if search bar is empty, all cocktails will be displayed
             </p>
             <div>
-                <b>Github Repository:</b> 
+                <b>Github Repository: </b><a href='https://github.com/gregtanym/cocktails-react'>here</a> 
             </div>
             <div>
                 <b>Demo:</b> Unavailable 
             </div>
             <div>
-                <b>Cocktail API:</b> https://www.thecocktaildb.com/api.php
+                <b>Cocktail API:</b> <a href='https://www.thecocktaildb.com/api.php'>https://www.thecocktaildb.com/api.php</a>
             </div>
         </div>
     </div>

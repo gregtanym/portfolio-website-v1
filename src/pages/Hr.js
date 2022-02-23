@@ -26,7 +26,7 @@ const Hr = () => {
                 This app has a form page with form validation to allow employees to fill in their personal details. On the employer side, there is a login required to be able to see the employee details table as this table contains sensitive information and it is only authorised to employers. At that stage, in employer would be able to see all the employees and is also able to edit or delete the their details. All changes made are stored in the backend database created.
             </p>
             <div>
-                <b>Github Repository:</b> 
+                <b>Github Repository: </b> Unavailable
             </div>
             <div>
                 <b>Demo:</b> Unavailable 
