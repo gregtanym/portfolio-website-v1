@@ -121,6 +121,15 @@ const Home = () => {
                                 <BarChart/>
                             </div>
                         </div>
+                        <div className='project-card-styling' data-aos="fade-down" id='projects'>
+                            <div className='project-card'>
+                                <h2 className="project-card-title"><i>Projects</i></h2>
+                                <ProjectTabs/>
+                                <div className='closing-tag'>
+                                    More to come......
+                                </div>
+                            </div>
+                        </div>
                         <div className='card-styling' data-aos="fade-down" id='education'>
                         <div className='card-text'>
                                 <h1 className="card-title"><i>Education</i></h1>
@@ -144,15 +153,6 @@ const Home = () => {
                             </div>
                             <div className='card-png'>
                                 <img src={graduated} alt='education' width='200' height='200' style={{opacity: '0.8'}}/>
-                            </div>
-                        </div>
-                        <div className='project-card-styling' data-aos="fade-down" id='projects'>
-                            <div className='project-card'>
-                                <h2 className="project-card-title"><i>Projects</i></h2>
-                                <ProjectTabs/>
-                                <div className='closing-tag'>
-                                    More to come......
-                                </div>
                             </div>
                         </div>
                         <div className='card-styling' data-aos="fade-down" id='aspirations'>

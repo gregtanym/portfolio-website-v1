@@ -218,7 +218,7 @@ body {
 
 .project-tab img{
   height: 150px;
-  width: 200px;
+  width: 200px; 
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -514,3 +514,41 @@ body {
    font-size: large;
    align-self: flex-start;
  }
+
+ @media screen and (min-width: 1800px) {
+  .project-tab img{
+    height: 150px;
+    width: 300px; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .project-info{
+    color: black;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .project-tab img{
+    height: 150px;
+    width: 180px; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .project-info{
+    color: black;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+  }
+}
+
+
