@@ -69,11 +69,9 @@ const Home = () => {
                                         {myElementIsVisible ? (<ContactButton/>):(<FloatingButton/>)}
                                     </Link>
                                 </Flipper>
-                                {/* <button type='button' onClick={changeButton}>Change Button</button> */}
                             </div>
                         </div>
                     </div>
-                    {/* <img className='header-img' src={vectorIllustration} alt='vector illustration' /> */}
                     <div className='header-img'>
                         <div ref={container}/>
                         <Link className='download' to='/GregResume.pdf' target='__blank' download>Download My CV!</Link>
