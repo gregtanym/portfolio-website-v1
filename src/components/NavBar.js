@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useGlobalContext } from '../context';
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
-import FloatingButton from './FloatingButton';
 import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {

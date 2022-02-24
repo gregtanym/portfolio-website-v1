@@ -11,9 +11,9 @@ const AvatarPage = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={gallery}></img>
-            <img src={edit}></img>
-            <img src={login}></img>
+            <img src={gallery} alt='gallery'></img>
+            <img src={edit} alt='edit'></img>
+            <img src={login} alt='login'></img>
         </div>
         <h1>avatartar_sauce</h1>
         <div className='project-description'>

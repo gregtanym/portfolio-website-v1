@@ -12,10 +12,10 @@ const Hr = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={employee} style={{width: '300px', border:'solid grey 1px'}}></img>
-            <img src={form} style={{width: '300px', border:'solid grey 1px'}}></img>
-            <img src={register} style={{width: '300px', border:'solid grey 1px'}} ></img>
-            <img src={login} style={{width: '300px', border:'solid grey 1px'}} ></img>
+            <img src={employee} alt='employee' style={{width: '300px', border:'solid grey 1px'}}></img>
+            <img src={form} alt='form' style={{width: '300px', border:'solid grey 1px'}}></img>
+            <img src={register} alt='register' style={{width: '300px', border:'solid grey 1px'}} ></img>
+            <img src={login} alt='login' style={{width: '300px', border:'solid grey 1px'}} ></img>
         </div>
         <h1>Human Resources App</h1>
         <div className='project-description'>

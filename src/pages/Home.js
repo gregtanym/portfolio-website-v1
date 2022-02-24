@@ -1,11 +1,9 @@
 import React, {useRef, useEffect} from 'react';
 import {FaArrowDown} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
-import { useGlobalContext } from '../context';
 // import 'bootstrap/dist/css/bootstrap.css';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import { getElementError } from '@testing-library/react';
 import { Flipper, Flipped } from 'react-flip-toolkit'
 import Lottie from 'lottie-web';
 import BarChart from '../components/BarChart';

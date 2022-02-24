@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import avatar from '../images/Edit Avatar Page.png'
 import cocktail from '../images/Search Function.png'
 import hr from '../images/HR Register Page.png'
@@ -11,7 +11,7 @@ const ProjectTabs = () => {
       <Link to='/project/avatar' style={{textDecoration:'none'}}>
         <div className='project-tab'>
           {/* <MDBView hover zoom><img src={avatar}/></MDBView> */}
-          <img src={avatar}/>
+          <img src={avatar} alt='avatar'/>
           <div className='project-info'>
             avatartar_sauce
           </div>
@@ -19,7 +19,7 @@ const ProjectTabs = () => {
       </Link>
       <Link to='/project/cocktail' style={{textDecoration:'none'}}>
         <div className='project-tab'>
-          <img src={cocktail}/>
+          <img src={cocktail} alt='cocktail'/>
           <div className='project-info'>
             CocktailsDB
           </div>
@@ -27,7 +27,7 @@ const ProjectTabs = () => {
       </Link>
       <Link to='/project/hr' style={{textDecoration:'none'}}>
         <div className='project-tab'>
-          <img src={hr}/>
+          <img src={hr} alt='hr'/>
           <div className='project-info'>
             Human Resources App
           </div>
@@ -35,7 +35,7 @@ const ProjectTabs = () => {
       </Link>
       <Link to='/project/stripe' style={{textDecoration:'none'}}>
         <div className='project-tab'>
-          <img src={stripe}/>
+          <img src={stripe} alt='stripe'/>
           <div className='project-info'>
             Stripe Landing Page
           </div>

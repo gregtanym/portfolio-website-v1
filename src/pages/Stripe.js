@@ -10,8 +10,8 @@ const Stripe = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={stripeImg} style={{height:'280px',  width:'400px'}}></img>
-            <img src={actual} style={{height:'280px',  width:'400px'}}></img>
+            <img src={stripeImg} alt='my-stripe' style={{height:'280px',  width:'400px'}}></img>
+            <img src={actual} alt='actual' style={{height:'280px',  width:'400px'}}></img>
         </div>
         <h1>Stripe Landing Page</h1>
         <div className='project-description'>

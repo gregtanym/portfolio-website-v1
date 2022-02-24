@@ -132,20 +132,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-
-{/* <div className='form-container'>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css	"/>
-<form className='form' ref={form} onSubmit={sendEmail}>
-    <label>Name</label>
-    <input type="text" name="name" />
-    <label>Email</label>
-    <input type="email" name="email" />
-    <label>Message</label>
-    <textarea name="message" />
-    <input type="submit" value="Send" />
-</form>
-</div> */}
-
-// {!isPending ? <input type='submit' className='btn btn-dark w-100'/> : <input type='submit' disabled='disabled' className='btn btn-dark w-100' value='Loading...'/>
-{/* <form className='form' ref={form} onSubmit={sendEmail}> */}

@@ -10,8 +10,8 @@ const Cocktail = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={search} style={{height:'280px',  width:'400px'}}></img>
-            <img src={cocktail} style={{height:'280px',  width:'400px'}}></img>
+            <img src={search} alt='search' style={{height:'280px',  width:'400px'}}></img>
+            <img src={cocktail} alt='cocktail' style={{height:'280px',  width:'400px'}}></img>
         </div>
         <h1>CocktailsDB</h1>
         <div className='project-description'>
