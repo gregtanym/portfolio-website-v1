@@ -200,6 +200,7 @@ body {
 .project-tab{
   display: flex;
   flex-direction: column;
+  text-align: center;
   height: max-content;
   width: max-content;
   border-radius: 10px;
@@ -231,6 +232,7 @@ body {
   align-items: center;
   height: 50px;
   width: 200px;
+  word-wrap: break-word;
 }
 
 
@@ -529,6 +531,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 50px;
     width: 300px;
   }
@@ -547,6 +550,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 50px;
     width: 180px;
   }

@@ -8,10 +8,10 @@ const BarChart = () => {
     <div>
         <Bar
         data={{
-            labels: ['Javascript', 'React', 'Python', 'HTML & CSS', 'CSS Flexbox & Grid', 'Mircosoft Excel', 'Django/Django REST Framework', 'C', 'SQL', 'Flask'],
+            labels: ['Javascript', 'React', 'Python', 'HTML & CSS', 'Django/Django REST Framework', 'CSS Flexbox & Grid', 'Mircosoft Excel', 'C', 'SQL', 'Flask'],
             datasets: [{
                 label: 'Level of Proficiency',
-                data: [5,5,5,4,4,3,3,3,2,2],
+                data: [5,5,5,4,4,4,3,3,2,2],
                 backgroundColor: '#00a0ed',
             }]
         }}
