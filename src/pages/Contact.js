@@ -6,6 +6,7 @@ import { Flipper, Flipped } from 'react-flip-toolkit'
 import TextareaAutosize from 'react-textarea-autosize';
 import Lottie from 'lottie-web';
 import FloatingButton from '../components/FloatingButton';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Contact = () => {
 
@@ -66,68 +67,70 @@ const Contact = () => {
     }
 
   return (
-    <div className='form-container'>
-        <div className='social-media-list'>
-            <div className='social-tags'>
-                <a href='https://www.instagram.com/'>
-                    <div className='social-icon'>
-                        <FaInstagram size={30}/>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+        <div className='form-container'>
+            <div className='social-media-list'>
+                <div className='social-tags'>
+                    <a href='https://www.instagram.com/'>
+                        <div className='social-icon'>
+                            <FaInstagram size={30}/>
+                        </div>
+                    </a>
+                    <div className='social-text'>
+                        @gregtanym
                     </div>
-                </a>
-                <div className='social-text'>
-                    @gregtanym
                 </div>
-            </div>
-            
-            <div className='social-tags'>
-                <a href='https://github.com/gregtanym?tab=repositories'>
-                    <div className='social-icon'>
-                        <FaGithub size={30}/>   
+                
+                <div className='social-tags'>
+                    <a href='https://github.com/gregtanym?tab=repositories'>
+                        <div className='social-icon'>
+                            <FaGithub size={30}/>   
+                        </div>
+                    </a>
+                    <div className='social-text'>
+                        @gregtanym
                     </div>
-                </a>
-                <div className='social-text'>
-                    @gregtanym
                 </div>
+
+                <div className='social-tags'>
+                    <div className='social-icon'>
+                        <FiMail size={30}/> 
+                    </div>
+                    <div className='social-text'>
+                        gregtan022@gmail.com
+                    </div>
+                </div>
+
+                <div className='social-tags'>
+                    <a href='https://www.linkedin.com/in/gregtanym/'>
+                        <div className='social-icon'>
+                            <FaLinkedin size={30}/> 
+                        </div>
+                    </a>
+                    <div className='social-text'>
+                        /gregtanym/
+                    </div>
+                </div>
+                
             </div>
 
-            <div className='social-tags'>
-                <div className='social-icon'>
-                    <FiMail size={30}/> 
+            <form className='form' ref={form} onSubmit={sendEmail}>
+                <div className='form-header'>
+                    <h2>Send me an email!</h2>
                 </div>
-                <div className='social-text'>
-                    gregtan022@gmail.com
+                <input className='input-text' type="text" name="name" autoComplete='off' placeholder='Your Name' required/>
+                <input className='input-text' type="email" name="email" autoComplete='off' placeholder='Your Email' required/>
+                {/* <textarea className='input-text area' name="message" autoComplete='off' placeholder='Message' rows={6}/> */}
+                <TextareaAutosize name='message' placeholder='Message' maxRows={5} style={{outline: '0', borderWidth:'0 0 3px', borderColor:'#00a0ed', marginTop:'40px', padding:'5px'}} required/>
+                <div className='component-switch'>
+                    <Flipper flipKey={submitForm}>
+                        {submitForm ? <SuccessIcon />: <SubmitButton />}
+                    </Flipper>
                 </div>
-            </div>
-
-            <div className='social-tags'>
-                <a href='https://www.linkedin.com/in/gregtanym/'>
-                    <div className='social-icon'>
-                        <FaLinkedin size={30}/> 
-                    </div>
-                </a>
-                <div className='social-text'>
-                    /gregtanym/
-                </div>
-            </div>
-            
+            </form>
+            <FloatingButton/>
         </div>
-
-        <form className='form' ref={form} onSubmit={sendEmail}>
-            <div className='form-header'>
-                <h2>Send me an email!</h2>
-            </div>
-            <input className='input-text' type="text" name="name" autoComplete='off' placeholder='Your Name' required/>
-            <input className='input-text' type="email" name="email" autoComplete='off' placeholder='Your Email' required/>
-            {/* <textarea className='input-text area' name="message" autoComplete='off' placeholder='Message' rows={6}/> */}
-            <TextareaAutosize name='message' placeholder='Message' maxRows={5} style={{outline: '0', borderWidth:'0 0 3px', borderColor:'#00a0ed', marginTop:'40px', padding:'5px'}} required/>
-            <div className='component-switch'>
-                <Flipper flipKey={submitForm}>
-                    {submitForm ? <SuccessIcon />: <SubmitButton />}
-                </Flipper>
-            </div>
-        </form>
-        <FloatingButton/>
-    </div>
+    </motion.div>
   )
 }
 
