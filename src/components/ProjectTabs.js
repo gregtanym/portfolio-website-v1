@@ -3,6 +3,7 @@ import avatar from '../images/Edit Avatar Page.png'
 import cocktail from '../images/Search Function.png'
 import hr from '../images/HR Register Page.png'
 import stripe from '../images/Landing Page.png'
+import foodbank from '../images/home.png'
 import { Link } from 'react-router-dom';
 
 const ProjectTabs = () => {
@@ -33,11 +34,11 @@ const ProjectTabs = () => {
           </div>
         </div>
       </Link>
-      <Link to='/project/stripe' style={{textDecoration:'none'}}>
+      <Link to='/project/foodbank' style={{textDecoration:'none'}}>
         <div className='project-tab'>
-          <img src={stripe} alt='stripe'/>
+          <img src={foodbank} alt='foodbank'/>
           <div className='project-info'>
-            Stripe Landing Page
+            FoodBank Volunteer Website
           </div>
         </div>
       </Link>
