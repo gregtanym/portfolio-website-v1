@@ -3,6 +3,7 @@ import volHome from '../images/home.png'
 import volEvent from '../images/single event.png'
 import volGrp from '../images/grp sign up.png'
 import adminCal from '../images/admin calendar.png'
+import FloatingButton from '../components/FloatingButton';
 
 const FoodBank = () => {
     useEffect(() => {
@@ -12,12 +13,12 @@ const FoodBank = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={volHome} alt='my-stripe' style={{height:'250px',  width:'320px'}}></img>
+            <img className='main-img' src={volHome} alt='my-stripe' style={{height:'250px',  width:'320px'}}></img>
             <img src={volEvent} alt='my-stripe' style={{height:'250px',  width:'320px'}}></img>
             <img src={volGrp} alt='my-stripe' style={{height:'250px',  width:'320px'}}></img>
             <img src={adminCal} alt='actual' style={{height:'250px',  width:'320px'}}></img>
         </div>
-        <h1>FoodBank Volunteer Management System</h1>
+        <h1 className='project-title'>FoodBank Volunteer Management System</h1>
         <div className='project-description'>
             <p>
                 This project was done by my team and I for a hackathon by hacksingapore in 2022. The goal was to create a volunteer management system for FoodBank Singapore as they were facing many issues with their current system (limited fucntionality, non-responsive website).
@@ -34,13 +35,16 @@ const FoodBank = () => {
             <p>
                 For a detailed explanation of our project, please visit the Github repository below.
             </p>
-            <div>
-                <b>Github Repository: </b><a href='https://github.com/ryanlohyr/Foodbank-Volunteers/blob/main/README.md'>here</a> 
-            </div>
-            <div>
-                <b>Demo: </b><a href='https://hacksingapore.bubbleapps.io/version-test/events_page_final'>here</a> 
+            <div className='project-links'>
+                <div>
+                    <b>Github Repository: </b><a href='https://github.com/ryanlohyr/Foodbank-Volunteers/blob/main/README.md'>here</a> 
+                </div>
+                <div>
+                    <b>Demo: </b><a href='https://hacksingapore.bubbleapps.io/version-test/events_page_final'>here</a> 
+                </div>
             </div>
         </div>
+        <FloatingButton/>
     </div>
   )
 }

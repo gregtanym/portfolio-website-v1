@@ -15,8 +15,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import ProjectTabs from '../components/ProjectTabs';
 import { motion } from 'framer-motion/dist/framer-motion';
-
-
+import CurvedHeading from '../components/CurvedHeading';
 
 const Home = () => {
     const {ref: myRef, inView : myElementIsVisible} = useInView()
@@ -60,7 +59,7 @@ const Home = () => {
                 <div className='main-container'>
                     <div className='header-container'>
                         <div className='header-text'>
-                            <h1><i>Welcome to my website!</i></h1>
+                            <h1>Welcome to my website!</h1>
                             <h4 ref={myRef}>Created and designed by Greg Tan</h4>
                             <div>
                                 <div className='contact-button-adjustments'>
@@ -76,7 +75,6 @@ const Home = () => {
                             <div ref={container}/>
                             <Link className='download' to='/GregResume.pdf' target='__blank' download>Download My CV!</Link>
                         </div>
-                        
                     </div>
                     <div className="arrow bounce">
                         <FaArrowDown size={40}/>
@@ -96,7 +94,6 @@ const Home = () => {
                                 <div className='card-text'>
                                     <h1 className="card-title"><i>Experience</i></h1>
                                     <br/>
-                                    <p>
                                         <ul>
                                             <li>
                                                 <h6>Software Engineer/Artificial Intelligence Intern at Reluvate Technologies</h6>
@@ -107,7 +104,6 @@ const Home = () => {
                                                 <p>Jan 2020 - Nov 2021</p>
                                             </li>
                                         </ul>
-                                    </p>
                                 </div>
                                 <div className='card-png'>
                                     <img src={working} alt='work-exp' width='200' height='200' style={{opacity: '0.8'}}/>
@@ -129,10 +125,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='card-styling' data-aos="fade-down" id='education'>
-                            <div className='card-text'>
+                                <div className='card-text'>
                                     <h1 className="card-title"><i>Education</i></h1>
                                     <br/>
-                                    <p>
                                         <ul>
                                             <li>
                                                 <h6>CS50: Introduction to Computer Science, Harvard University</h6>
@@ -147,7 +142,6 @@ const Home = () => {
                                                 <p>Jan 2014 - Oct 2017</p>
                                             </li>
                                         </ul>
-                                    </p>
                                 </div>
                                 <div className='card-png'>
                                     <img src={graduated} alt='education' width='200' height='200' style={{opacity: '0.8'}}/>

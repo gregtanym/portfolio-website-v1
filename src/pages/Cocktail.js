@@ -1,6 +1,7 @@
 import React, {useEffect}from 'react'
 import cocktail from '../images/Single Cocktail Page.png'
 import search from '../images/Search Function.png'
+import FloatingButton from '../components/FloatingButton';
 
 const Cocktail = () => {
     useEffect(() => {
@@ -10,10 +11,10 @@ const Cocktail = () => {
   return (
     <div className='project-page'>
         <div className='image-collection'>
-            <img src={search} alt='search' style={{height:'280px',  width:'400px'}}></img>
+            <img className='main-img' src={search} alt='search' style={{height:'280px',  width:'400px'}}></img>
             <img src={cocktail} alt='cocktail' style={{height:'280px',  width:'400px'}}></img>
         </div>
-        <h1>CocktailsDB</h1>
+        <h1 className='project-title'>CocktailsDB</h1>
         <div className='project-description'>
             <p>
                 CocktailsDB is a web application that uses an external API from thecocktaildb.com. This app was my first project with React.js. i wanted to learn how to make asynchronous fetch calls to an API and well as get used to React hooks such as useState and useEffect.
@@ -24,16 +25,19 @@ const Cocktail = () => {
             <p>
                 The search function works on every keystroke and will filter out the cocktails as you type. if search bar is empty, all cocktails will be displayed
             </p>
-            <div>
-                <b>Github Repository: </b><a href='https://github.com/gregtanym/cocktails-react'>here</a> 
-            </div>
-            <div>
-                <b>Demo:</b> Unavailable 
-            </div>
-            <div>
-                <b>Cocktail API:</b> <a href='https://www.thecocktaildb.com/api.php'>https://www.thecocktaildb.com/api.php</a>
+            <div className='project-links'>
+                <div>
+                    <b>Github Repository: </b><a href='https://github.com/gregtanym/cocktails-react'>here</a> 
+                </div>
+                <div>
+                    <b>Demo:</b> Unavailable 
+                </div>
+                <div>
+                    <b>Cocktail API:</b> <a href='https://www.thecocktaildb.com/api.php'>https://www.thecocktaildb.com/api.php</a>
+                </div>
             </div>
         </div>
+        <FloatingButton/>
     </div>
   )
 }

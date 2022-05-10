@@ -1,11 +1,17 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
+    const [sidebar, setSidebar] = useState(false)
 
     return(
-        <AppContext.Provider >
+        <AppContext.Provider value={
+            {
+                sidebar,
+                setSidebar
+            }
+        }>
             {children}
         </AppContext.Provider>
     )

@@ -1,9 +1,33 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import { HashLink } from 'react-router-hash-link';
+import {CgMenu} from 'react-icons/cg';
+import {useGlobalContext} from '../context'
 
 const NavBar = () => {
+    const {sidebar, setSidebar} = useGlobalContext()
+
+    // disappearing navbar effect
+    // const [prevScrollPos, setPrevScrollPos] = useState(0);
+    // const [visible, setVisible] = useState(true);
+
+    // const handleScroll = () => {
+    //     const currentScrollPos = window.pageYOffset;
+
+    //     setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+    //     setPrevScrollPos(currentScrollPos);
+    // };
+
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, [prevScrollPos, visible, handleScroll]);
+
+    const showSidebar = () => {
+        setSidebar(!sidebar)
+    }
      
     return (
         <div className='navbar'>
@@ -19,6 +43,9 @@ const NavBar = () => {
                 <HashLink to='/#education' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Education</HashLink>
                 <HashLink to='/#projects' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Projects</HashLink>
                 <HashLink to='/#aspirations' style={{ textDecoration: 'none', color:'white', padding:'10px' }}>Aspirations</HashLink>
+            </div>
+            <div className='menu-icon'>
+                <CgMenu size={35} color='white' onClick={showSidebar} style={{cursor:'pointer'}}/>
             </div>
         </div>
     )

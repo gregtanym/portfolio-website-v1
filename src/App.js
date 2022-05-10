@@ -9,12 +9,14 @@ import Cocktail from "./pages/Cocktail";
 import Hr from "./pages/Hr";
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
 import FoodBank from "./pages/FoodBank";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   // let location = useLocation()
   return (
     <BrowserRouter>
       <NavBar />
+      <Sidebar />
       <AnimatePresence exitBeforeEnter>
         {/* animatepresence will trigger everytime a direct child is changed, uselocation is to help cause a change in the routes to cause animation to trigger */}
         <Routes>

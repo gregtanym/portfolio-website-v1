@@ -2,6 +2,7 @@ import React, {useEffect}from 'react'
 import edit from '../images/Edit Avatar Page.png'
 import gallery from '../images/Avatar Gallery Page.png'
 import login from '../images/Login Page.png'
+import FloatingButton from '../components/FloatingButton';
 
 const AvatarPage = () => {
     useEffect(() => {
@@ -12,10 +13,10 @@ const AvatarPage = () => {
     <div className='project-page'>
         <div className='image-collection'>
             <img src={gallery} alt='gallery'></img>
-            <img src={edit} alt='edit'></img>
+            <img className='main-img' src={edit} alt='edit'></img>
             <img src={login} alt='login'></img>
         </div>
-        <h1>avatartar_sauce</h1>
+        <h1 className='project-title'>avatartar_sauce</h1>
         <div className='project-description'>
             <p>
                 avatartar_sauce is a web application I created for my CS50 final project. It was my first project I ever created. I was inspired by club penguin to create this app.
@@ -26,13 +27,16 @@ const AvatarPage = () => {
             <p>
                 There is also a button that directs the user to a separate page that allows him/her to see the works of other users and interact with their avatars.
             </p>
-            <div>
-                <b>Github Repository: </b><a href='https://github.com/gregtanym/CS50/tree/main/CS50%20final%20project'>here</a>
-            </div>
-            <div>
-                <b>Demo:</b> Unavailable 
+            <div className='project-links'>
+                <div>
+                    <b>Github Repository: </b><a href='https://github.com/gregtanym/CS50/tree/main/CS50%20final%20project'>here</a>
+                </div>
+                <div>
+                    <b>Demo:</b> Unavailable 
+                </div>
             </div>
         </div>
+        <FloatingButton/>
     </div>
   )
 }

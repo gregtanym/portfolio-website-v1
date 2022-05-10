@@ -6,7 +6,7 @@ const BarChart = () => {
     
   return (
     <div>
-        <Bar
+        <Bar className='barchart'
         data={{
             labels: ['Javascript', 'React', 'Python', 'HTML & CSS', 'Django/Django REST Framework', 'CSS Flexbox & Grid', 'Mircosoft Excel', 'C', 'SQL', 'Flask'],
             datasets: [{
@@ -15,16 +15,25 @@ const BarChart = () => {
                 backgroundColor: '#00a0ed',
             }]
         }}
-        height={300}
-        width={800}
+        style={{height: '300px', width:'800px'}}
+        // height={300}
+        // width={800}
+        // options={{
+        //     maintainAspectRatio: false,
+        //     scales: {
+        //         yAxes: [{
+        //             ticks: {
+        //                 beginAtZero: true,
+        //             },
+        //         },]
+        //     },
+        // }}
         options={{
             maintainAspectRatio: false,
             scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                },]
+                y: {
+                    beginAtZero: true
+                }
             },
         }}
         />
