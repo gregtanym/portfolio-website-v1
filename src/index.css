@@ -157,6 +157,10 @@ body {
   height: 100%;
   width: 100%;
 }
+.skills-card div{
+  width: 100%;
+  height: 100%;
+}
 
 .project-card-styling{
   display: flex;
