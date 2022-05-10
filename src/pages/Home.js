@@ -77,7 +77,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="arrow bounce">
-                        <FaArrowDown size={40}/>
+                        <FaArrowDown size={40} color='black'/>
                     </div>
                     <div className='body-container'>
                         <div className='card-container'>
