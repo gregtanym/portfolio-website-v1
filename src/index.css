@@ -329,6 +329,7 @@ body {
 
 .arrow {
   text-align: center;
+  position: static;
   display: block;
   margin: 0;
   margin-top: 50px;
@@ -659,6 +660,7 @@ body {
     align-items: center;
   }
   .header-text{
+    border: solid green;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -666,6 +668,7 @@ body {
     align-items: center;
   }
   .header-text h1{
+    border: solid red;
     font-style: normal;
     font-size: 40px;
     margin-top: 20px;
@@ -721,8 +724,8 @@ body {
     justify-content: center;
   }
   .skills-card div{
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
   }
   .project-tab{
     margin-bottom: 5px;
