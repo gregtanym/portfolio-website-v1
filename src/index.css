@@ -660,7 +660,6 @@ body {
     align-items: center;
   }
   .header-text{
-    border: solid green;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -668,7 +667,7 @@ body {
     align-items: center;
   }
   .header-text h1{
-    border: solid red;
+    text-align: center;
     font-style: normal;
     font-size: 40px;
     margin-top: 20px;
