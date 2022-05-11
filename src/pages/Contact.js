@@ -71,7 +71,7 @@ const Contact = () => {
         <div className='form-container'>
             <div className='social-media-list'>
                 <div className='social-tags'>
-                    <a href='https://www.instagram.com/'>
+                    <a href='https://www.instagram.com/gregtanym'>
                         <div className='social-icon'>
                             <FaInstagram size={30}/>
                         </div>
