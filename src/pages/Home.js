@@ -141,10 +141,6 @@ const Home = () => {
                                                 <h6>St Andrew's Junior College (A-Level, 86.25rp)</h6>
                                                 <p>Feb 2018 - Nov 2019</p>
                                             </li>
-                                            <li>
-                                                <h6>Temasek Secondary School (O-Level, 9pts)</h6>
-                                                <p>Jan 2014 - Oct 2017</p>
-                                            </li>
                                         </ul>
                                 </div>
                                 <div className='card-png'>
