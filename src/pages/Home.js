@@ -97,7 +97,7 @@ const Home = () => {
                                         <ul>
                                             <li>
                                                 <h6>Software Engineer/Artificial Intelligence Intern at Reluvate Technologies</h6>
-                                                <p>Jan 2022 - Current</p>
+                                                <p>Jan 2022 - May 2022</p>
                                             </li>
                                             <li>
                                                 <h6>Ops Specialist in HQ 7SIB S3 Branch (National Service)</h6>
@@ -129,6 +129,10 @@ const Home = () => {
                                     <h1 className="card-title"><i>Education</i></h1>
                                     <br/>
                                         <ul>
+                                            <li>
+                                                <h6>Computer Science Course, National Universtiy Singapore</h6>
+                                                <p>Aug 2022 - Current</p>
+                                            </li>
                                             <li>
                                                 <h6>CS50: Introduction to Computer Science, Harvard University</h6>
                                                 <p>Nov 2020 - Mar 2021</p>
