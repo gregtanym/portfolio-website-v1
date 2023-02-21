@@ -7,7 +7,8 @@ import Contact from "./pages/Contact";
 import AvatarPage from "./pages/AvatarPage";
 import Cocktail from "./pages/Cocktail";
 import Hr from "./pages/Hr";
-import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+// import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import FoodBank from "./pages/FoodBank";
 import Sidebar from "./components/Sidebar";
 

@@ -6,7 +6,7 @@ import { Flipper, Flipped } from 'react-flip-toolkit'
 import TextareaAutosize from 'react-textarea-autosize';
 import Lottie from 'lottie-web';
 import FloatingButton from '../components/FloatingButton';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 

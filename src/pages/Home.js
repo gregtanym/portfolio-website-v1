@@ -14,7 +14,7 @@ import idea from '../images/idea.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import ProjectTabs from '../components/ProjectTabs';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import CurvedHeading from '../components/CurvedHeading';
 
 const Home = () => {
