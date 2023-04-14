@@ -40,7 +40,13 @@ const FoodBank = () => {
                     <b>Github Repository: </b><a href='https://github.com/ryanlohyr/Foodbank-Volunteers/blob/main/README.md'>here</a> 
                 </div>
                 <div>
-                    <b>Demo: </b><a href='https://hacksingapore.bubbleapps.io/version-test/events_page_final'>here</a> 
+                    <b>Demo video: </b><a href='https://hacksingapore.com/wp-content/uploads/2022/05/Team-JSON-derulo.mp4'>here</a> 
+                </div>
+                <div>
+                    <b>User site: </b><a href='https://hacksingapore.bubbleapps.io/version-test/events_page_final'>here</a> 
+                </div>
+                <div>
+                    <b>Admin site: </b><a href='https://hacksingapore.bubbleapps.io/version-test/admin_page'>here</a> 
                 </div>
             </div>
         </div>
